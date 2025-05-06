@@ -1,0 +1,202 @@
+/* File: src/components/StaffProfileView.css */
+
+
+.staff-profile-view {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f7fa;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .profile-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left side - Profile Card */
+  .profile-card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .profile-image {
+    width: 150px !important;
+    height: 150px !important;
+    margin-bottom: 15px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0 15px;
+    color: #333;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ebedf0;
+    color: #1877f2;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .social-icon.facebook {
+    color: #1877f2;
+  }
+  
+  .social-icon.linkedin {
+    color: #0077b5;
+  }
+  
+  .social-icon.skype {
+    color: #00aff0;
+  }
+  
+  .social-icon.email {
+    color: #d93025;
+  }
+  
+  .contact-details {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #f0f3f7;
+    border-radius: 50%;
+    margin-right: 15px;
+    color: #000; /* Changed to black as requested */
+  }
+  
+  /* Social media icons in blue */
+  .social-icons .fab, .social-icons .fas {
+    color: #fff;
+  }
+  
+  /* Right side - Information Panels */
+  .information-panels {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+  }
+  
+  .panel-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  /* Display information in single line as in the image */
+  .info-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    width: 100%;
+  }
+  
+  /* Alternate row colors */
+  .info-row:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .info-row:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .info-label {
+    width: 180px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .info-value {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Full screen adaptations */
+  @media (min-width: 1200px) {
+    .panel-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .staff-profile-view {
+      padding: 30px;
+    }
+    
+    .profile-container {
+      gap: 30px;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .profile-container {
+      flex-direction: column;
+    }
+    
+    .profile-card {
+      width: 100%;
+    }
+    
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
