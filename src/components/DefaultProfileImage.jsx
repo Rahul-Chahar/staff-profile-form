@@ -1,4 +1,3 @@
-// File: src/components/DefaultProfileImage.jsx
 import React from 'react';
 
 const DefaultProfileImage = ({ className = '' }) => {
@@ -26,7 +25,7 @@ const DefaultProfileImage = ({ className = '' }) => {
   return (
     <div style={containerStyle} className={className}>
       <div style={imageStyle}>
-        {/* User silhouette icon */}
+       
         <svg 
           width="60" 
           height="60" 

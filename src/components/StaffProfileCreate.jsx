@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './StaffProfileCreate.css';
-// Since we can't include actual binary images in this implementation,
-// we'll create a component to serve as our default profile image
+
 import DefaultProfileImage from '../components/DefaultProfileImage';
 
 const StaffProfileCreate = () => {
@@ -64,31 +63,29 @@ const StaffProfileCreate = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would save the data to a database
-    // For this demo, we'll just navigate to the view page
-    // and pass the data via state
+   
     navigate('/view', { state: { 
       ...formData
-    //   staffCode: '0001',
-    //   gender: 'Female',
-    //   birthday: '12th July 1994',
-    //   phone: '+919307059006',
-    //   workplace: 'Bengaluru Office',
-    //   status: 'Full-time',
-    //   jobPosition: 'Job Position',
-    //   academicLevel: 'B Sc. Graduate',
-    //   hourlyRate: '₹120.00',
-    //   religion: 'Hindu',
-    //   nation: 'India',
-    //   maritalStatus: 'Married',
-    //   citizenIdentification: 'Aadhar Card',
-    //   dateOfIssue: '03rd May 2012',
-    //   placeOfBirth: 'Mumbai',
-    //   currentAddress: '1/2, Half Road, Fullfield, Wonder City, Bengaluru',
-    //   bankAccountNumber: '234987564212',
-    //   bankAccountName: 'Nallurhalli Branch',
-    //   bankName: 'State Bank of India',
-    //   personalTaxCode: 'ABCD1234'
+      // staffCode: '0001',
+      // gender: 'Female',
+      // birthday: '12th July 1994',
+      // phone: '+919307059006',
+      // workplace: 'Bengaluru Office',
+      // status: 'Full-time',
+      // jobPosition: 'Job Position',
+      // academicLevel: 'B Sc. Graduate',
+      // hourlyRate: '₹120.00',
+      // religion: 'Hindu',
+      // nation: 'India',
+      // maritalStatus: 'Married',
+      // citizenIdentification: 'Aadhar Card',
+      // dateOfIssue: '03rd May 2012',
+      // placeOfBirth: 'Mumbai',
+      // currentAddress: '1/2, Half Road, Fullfield, Wonder City, Bengaluru',
+      // bankAccountNumber: '234987564212',
+      // bankAccountName: 'Nallurhalli Branch',
+      // bankName: 'State Bank of India',
+      // personalTaxCode: 'ABCD1234'
     }});
   };
   

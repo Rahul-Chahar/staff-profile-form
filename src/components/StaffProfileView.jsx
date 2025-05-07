@@ -15,7 +15,6 @@ const StaffProfileView = () => {
   return (
     <div className="staff-profile-view">
       <div className="profile-container">
-        {/* Left Side - Profile Card */}
         <div className="profile-card">
           <div className="profile-image-container">
             <DefaultProfileImage className="profile-image" />
@@ -53,9 +52,7 @@ const StaffProfileView = () => {
           </div>
         </div>
 
-        {/* Right Side - Information Panels */}
         <div className="information-panels">
-          {/* General Information Panel */}
           <div className="info-panel">
             <h2 className="panel-title">General information</h2>
             <div className="info-grid">
@@ -114,7 +111,6 @@ const StaffProfileView = () => {
             </div>
           </div>
 
-          {/* Related Information Panel */}
           <div className="info-panel">
             <h2 className="panel-title">Related information</h2>
             <div className="info-grid">
