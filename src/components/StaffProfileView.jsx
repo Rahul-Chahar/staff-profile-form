@@ -1,4 +1,3 @@
-// File: src/components/StaffProfileView.jsx
 import { useLocation } from 'react-router-dom';
 import DefaultProfileImage from './DefaultProfileImage';
 import './StaffProfileView.css';
